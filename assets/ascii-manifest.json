@@ -1,0 +1,75 @@
+{
+  "source": "assets/portrait.jpeg",
+  "source_sha256": "1715598ecd953a4dbef7b47304f27b00c9be742f233fe5ddd2999cb83bd70e9e",
+  "crop": [
+    298,
+    236,
+    785,
+    961
+  ],
+  "grid": [
+    72,
+    62
+  ],
+  "cell_pixels": [
+    7,
+    12
+  ],
+  "pillow": "12.2.0",
+  "fonts": {
+    "mono": {
+      "path": "/System/Library/Fonts/Menlo.ttc",
+      "sha256": "dc256e0b39c2a6fec947129d421fef41b8b429f58f9b6e5d1b148c87f775c1f6"
+    },
+    "sans": {
+      "path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+    },
+    "bold": {
+      "path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0"
+    },
+    "serif": {
+      "path": "/System/Library/Fonts/Supplemental/Georgia Italic.ttf",
+      "sha256": "7758840cacb7382db65aa038e9fd1194d077ba9b55fe748f9cfb196d2773ac4e"
+    }
+  },
+  "outputs": [
+    {
+      "file": "hero-ascii.gif",
+      "dimensions": [
+        1000,
+        618
+      ],
+      "frames": 68,
+      "duration_ms": 6480,
+      "reveal_ms": 3000,
+      "completed_hold_ms": 3000,
+      "fade_ms": 300,
+      "ready_ms": 180,
+      "bytes": 292543
+    },
+    {
+      "file": "hero-ascii-mobile.gif",
+      "dimensions": [
+        480,
+        896
+      ],
+      "frames": 68,
+      "duration_ms": 6480,
+      "reveal_ms": 3000,
+      "completed_hold_ms": 3000,
+      "fade_ms": 300,
+      "ready_ms": 180,
+      "bytes": 242544
+    }
+  ],
+  "processing": {
+    "method": "source-luminance ASCII conversion",
+    "manual_eye_patterns": false,
+    "glasses_tracing": false,
+    "native_median_filter": 3,
+    "eye_tone_gamma": 1.85,
+    "beard_tone_gamma": 1.8
+  }
+}

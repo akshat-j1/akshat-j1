@@ -1,0 +1,47 @@
+name: Refresh Build Lab activity
+
+on:
+  schedule:
+    - cron: '23 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-lab-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.repository == 'akshat-j1/akshat-j1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Check out trusted default branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Refresh public data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/refresh_data.py
+      - name: Render and validate
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+          python3 scripts/render_profile.py
+          python3 scripts/validate_profile.py
+      - name: Save refreshed activity only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add assets/github-data.json assets/activity.svg assets/activity-mobile.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh public GitHub activity'
+          auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:main

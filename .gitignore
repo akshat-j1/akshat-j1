@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+assets/*.tmp
+.DS_Store
+.env
+.env.*
+
+# Local review artifacts and retained design alternatives.
+/preview.html
+/assets/preview-*.png
+/assets/ascii-comparison-*.png
+/assets/ascii-candidate-*.png
+/assets/ascii-previous-*.png
+/assets/ascii-stylized-*.png
+/assets/ascii-sequence-preview.png
+/assets/portrait-face-comparison.png
+/assets/portrait-ascii-before-eyes.png
+/assets/ascii-before-final/
+/assets/ascii-stylized/
+
+# Unused SVG hero alternatives; the README uses the final GIF/PNG heroes.
+/assets/hero.svg
+/assets/hero-static.svg
+/assets/hero-mobile.svg
+/assets/hero-mobile-static.svg
+
+# Local browser tooling and development review notes.
+/scripts/preview.py
+/scripts/capture_preview.mjs
+/scripts/compare_ascii.py
+/docs/DESIGN.md
+/docs/ascii-checks.json
+/docs/link-check.json
+/docs/visual-checks.json

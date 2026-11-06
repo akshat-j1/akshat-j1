@@ -1,0 +1,2 @@
+# Fixed-width ASCII cells intentionally retain trailing spaces.
+assets/portrait-ascii.txt -whitespace
