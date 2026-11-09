@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repositories": {
-    "updated_at": "2026-11-06T17:00:18Z",
+    "updated_at": "2026-11-09T16:37:35Z",
     "source": "https://api.github.com/users/akshat-j1/repos",
     "items": [
       {
@@ -17,7 +17,7 @@
       {
         "name": "akshat-j1",
         "fork": false,
-        "language": null
+        "language": "Python"
       },
       {
         "name": "fantasy",
@@ -33,6 +33,11 @@
         "name": "finance-mantainace-app-2.0",
         "fork": false,
         "language": "JavaScript"
+      },
+      {
+        "name": "first-contributions",
+        "fork": true,
+        "language": null
       },
       {
         "name": "games-search-website",
@@ -117,37 +122,9 @@
     ]
   },
   "contributions": {
-    "updated_at": "2026-11-06T17:00:19Z",
-    "source": "https://github.com/users/akshat-j1/contributions",
+    "updated_at": "2026-11-09T16:37:36Z",
+    "source": "https://api.github.com/graphql",
     "days": [
-      {
-        "date": "2025-11-02",
-        "count": 2
-      },
-      {
-        "date": "2025-11-03",
-        "count": 0
-      },
-      {
-        "date": "2025-11-04",
-        "count": 0
-      },
-      {
-        "date": "2025-11-05",
-        "count": 2
-      },
-      {
-        "date": "2025-11-06",
-        "count": 2
-      },
-      {
-        "date": "2025-11-07",
-        "count": 0
-      },
-      {
-        "date": "2025-11-08",
-        "count": 0
-      },
       {
         "date": "2025-11-09",
         "count": 0
@@ -1598,7 +1575,19 @@
       },
       {
         "date": "2026-11-06",
-        "count": 2
+        "count": 3
+      },
+      {
+        "date": "2026-11-07",
+        "count": 8
+      },
+      {
+        "date": "2026-11-08",
+        "count": 0
+      },
+      {
+        "date": "2026-11-09",
+        "count": 0
       }
     ]
   }
