@@ -16,6 +16,8 @@ I'm **Akshat**. I like turning a “what if?” into something you can actually 
 
 My work moves between **full-stack applications, practical AI experiments, and playful browser tools**. Lately, that has meant local computer vision, weather intelligence, and language assessment. Hackathons are another excuse to take an idea seriously enough to build it.
 
+[Website ↗](https://www.akshat-jain.me/) · [LinkedIn ↗](https://www.linkedin.com/in/akshat-jainofficial/)
+
 ## 01 / A few things I've built
 
 <a href="https://github.com/akshat-j1/meetflix">
@@ -81,7 +83,7 @@ My work moves between **full-stack applications, practical AI experiments, and p
 
 Have an idea, a question, or a useful rabbit hole?
 
-**[Find me on GitHub ↗](https://github.com/akshat-j1)** · **[Explore my public work ↗](https://github.com/akshat-j1?tab=repositories)**
+**[Visit my website ↗](https://www.akshat-jain.me/)** · **[Connect on LinkedIn ↗](https://www.linkedin.com/in/akshat-jainofficial/)** · **[Find me on GitHub ↗](https://github.com/akshat-j1)**
 
 <br>
 
